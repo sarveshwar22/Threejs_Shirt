@@ -39,7 +39,7 @@ const Customizer = () => {
         // call backend
         setGeneratingImg(true);
         alert("OPENAI API CALL IS PAID, First you should add debit card details")
-        const res = await fetch('http://localhost:8080/api/v1/dalle',{
+        const res = await fetch('https://shirt3d-rb6j.onrender.com/api/v1/dalle',{
             method:'POST',
             headers: {
                 'Content-Type': 'application/json'
